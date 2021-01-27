@@ -1,6 +1,10 @@
 import * as actionTypes from '../actions/actionTypes';
 const initialState = {
   hasResults: false,
+  payload: {
+    Search: [],
+    Error: null
+  }
 };
 
 const reducers = (state = initialState, action) => {

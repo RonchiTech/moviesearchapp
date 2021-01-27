@@ -11,7 +11,7 @@ const MovieList = ({ movie,  hasSearch, hasErrors }) => {
         return (
           <div className={classes.Movie} key={movie.imdbID}>
             <img className={classes.Image}src={movie.Poster} alt={movie.Title} />
-            <p>{movie.Title}</p>
+            <h2>{movie.Title}</h2>
           </div>
         );
       })

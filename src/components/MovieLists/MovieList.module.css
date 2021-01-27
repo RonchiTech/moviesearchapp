@@ -2,7 +2,10 @@
     cursor: pointer;
     width: 25%;
     display: inline-block;
-    margin: 5px 10px;
+    margin: 10px;
+}
+.Movie h2 {
+    font-size: 1rem;
 }
 .Image {
     height: 400px;

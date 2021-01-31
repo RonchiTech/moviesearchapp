@@ -1,3 +1,23 @@
 .ResultContainer {
     width: 100%;
+    margin-top: 50px;
+    border-radius: 7px;
+    background: rgba(255, 235, 205, 0.39);
+    padding: 30px 5px
 }
+
+.ResultContainer img {
+    height: 300px;
+    width: auto;
+}
+
+.MovieTitle {
+    font-size: 1.2rem;
+    color: #161688;
+    margin-top: 15px;
+}
+.Rating{
+    font-size: 1rem;
+    margin-top: 5px
+}
+

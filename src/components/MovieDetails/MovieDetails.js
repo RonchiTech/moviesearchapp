@@ -24,11 +24,11 @@ const MovieDetails = ({match}) => {
   return (
     <div className={classes.ResultContainer}>
       <img src={movie.Poster} alt={movie.Title}/>
-      <h2>{movie.Title}</h2>
-      <h4>({movie.Year})</h4>
-        <p>Rating: {movie.imdbRating}/10</p>
+      <h2 className={classes.MovieTitle}>{movie.Title}<span> ({movie.Year})</span></h2>
+      <h4 className={classes.Rating}>{movie.imdbRating}/10</h4>
       <h3>Casts: {movie.Actors}</h3>
-      <p>{movie.Plot}</p>
+      <h2 className={classes.Storyline}>Storyline</h2>
+      <p className={classes.Plot}>{movie.Plot}</p>
     <button onClick={BackToSearchHandler}>Back to search</button>
 
       {console.log(movie)}

@@ -7,7 +7,7 @@ const MovieDetails = ({match}) => {
     const [movie, setMovie] = useState({});
     let history = useHistory();
     useEffect(()=> {
-        axios.get(`http://www.omdbapi.com/?apikey=b77cc267&i=${id}`)
+        axios.get(`https://www.omdbapi.com/?apikey=b77cc267&i=${id}`)
         .then(response => {
             setMovie(response.data);
             console.table(response.data);

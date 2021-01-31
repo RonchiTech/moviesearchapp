@@ -2,7 +2,7 @@ import axios from 'axios'
 import * as actionTypes from './actionTypes'
 export const movieSearchStart = (value) => {
     return dispatch => {
-        axios.get(`http://www.omdbapi.com/?apikey=b77cc267&s=${value}`)
+        axios.get(`https://www.omdbapi.com/?apikey=b77cc267&s=${value}`)
         .then(response => {
             dispatch(movieSearchSuccess(response.data))
         })
